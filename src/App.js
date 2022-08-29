@@ -2,6 +2,7 @@ import FoodType from "./layout/FoodType";
 import Header from "./layout/Header";
 import Hero from "./layout/Hero";
 import Order from "./layout/Order";
+import Popular from "./layout/Popular";
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <Hero></Hero>
             <FoodType></FoodType>
             <Order></Order>
+            <Popular></Popular>
         </div>
     );
 }
