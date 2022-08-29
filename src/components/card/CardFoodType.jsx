@@ -11,6 +11,7 @@ const CardFoodTypeStyles = styled.div`
     );
     border-radius: 28px;
     padding: 32px 30px;
+    cursor: pointer;
     &:hover {
         background: linear-gradient(138.79deg, #b0cfff 8.47%, #82b2fe 81.99%);
     }

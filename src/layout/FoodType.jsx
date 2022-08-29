@@ -40,6 +40,7 @@ const FoodTypeStyles = styled.div`
                         fill: white;
                     }
                 }
+                cursor: pointer;
             }
         }
         .right {
