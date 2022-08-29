@@ -5,6 +5,7 @@ import Header from "./layout/Header";
 import Hero from "./layout/Hero";
 import Order from "./layout/Order";
 import Popular from "./layout/Popular";
+import Testimonials from "./layout/Testimonials";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Popular></Popular>
             <About></About>
             <CTA></CTA>
+            <Testimonials></Testimonials>
         </div>
     );
 }
