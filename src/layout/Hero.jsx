@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import bannerImage from "../assets/illustration.png";
+import bannerImage from "../assets/hero.png";
+import ButtonLoadMore from "../components/button/ButtonLoadMore";
 
 const HeroStyles = styled.div`
     display: flex;
@@ -39,42 +40,17 @@ const HeroStyles = styled.div`
             .input {
                 border-radius: inherit;
                 flex: 2;
+                padding: 0 10px;
                 input {
                     border-radius: inherit;
                     outline: none;
                     border: none;
                     width: 100%;
                     height: 100%;
-                    text-indent: 20px;
                 }
                 input::-webkit-input-placeholder {
                     color: #bab8bd;
                     font-size: 16px;
-                }
-            }
-            .discover-btn {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: white;
-                width: 120px;
-                padding: 5px 10px;
-                padding-left: 20px;
-                background: linear-gradient(
-                    153.09deg,
-                    #5390ff 10.28%,
-                    #1660e6 102.17%
-                );
-                box-shadow: 0px 4px 12px rgba(56, 126, 250, 0.2);
-                border-radius: 27px;
-                span {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 36px;
-                    height: 36px;
-                    background-color: #fff;
-                    border-radius: 50%;
                 }
             }
         }
@@ -103,23 +79,7 @@ const Hero = () => {
                     <div className="input">
                         <input placeholder="Enter Zip Coad" />
                     </div>
-                    <div className="discover-btn">
-                        Discover
-                        <span>
-                            <svg
-                                width="9"
-                                height="14"
-                                viewBox="0 0 9 14"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M-7.45373e-08 12.3492L5.56507 7L-5.57581e-07 1.65084L1.71746 -7.26787e-08L9 7L1.71746 14L-7.45373e-08 12.3492Z"
-                                    fill="#4585F9"
-                                />
-                            </svg>
-                        </span>
-                    </div>
+                    <ButtonLoadMore width="160px">Discover</ButtonLoadMore>
                 </div>
             </div>
             <div className="image">

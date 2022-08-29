@@ -6,7 +6,7 @@ const SubTitleStyles = styled.p`
     font-weight: 400;
     font-size: 16px;
     line-height: ${(props) => props.lineHeight};
-    text-align: center;
+    text-align: ${(props) => props.center};
     color: #aaa7b1;
     padding: 40px 0;
     letter-spacing: 0.005em;

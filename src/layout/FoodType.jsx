@@ -51,10 +51,10 @@ const FoodTypeStyles = styled.div`
 const FoodType = () => {
     return (
         <FoodTypeStyles>
-            <Title>
+            <Title center="center">
                 More Than 20,000 Dishes <br /> To Order!
             </Title>
-            <SubTitle>
+            <SubTitle center="center">
                 Welcome to The Biggest Network of Food Ordering & Delivery
             </SubTitle>
             <div className="food-card">

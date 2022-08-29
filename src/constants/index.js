@@ -89,3 +89,82 @@ export const popularItems = [
         price: "4.80",
     },
 ];
+
+export const aboutItems = [
+    {
+        id: 1,
+        icon: (
+            <svg
+                width="16"
+                height="11"
+                viewBox="0 0 16 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M0 5.95915H14M14 5.95915L9.5 10.4591M14 5.95915L9.5 1.45898"
+                    stroke="#2E2C49"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
+        content: "Order a nutritionist consultation",
+    },
+    {
+        id: 2,
+        icon: (
+            <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M1.1821 11.5405L11.0816 1.641M11.0816 1.641V8.00496M11.0816 1.641L4.71751 1.64089"
+                    stroke="#2E2C49"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
+        content: "Order healthy food express delivery",
+    },
+    {
+        id: 3,
+        icon: (
+            <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M1.1821 11.5405L11.0816 1.641M11.0816 1.641V8.00496M11.0816 1.641L4.71751 1.64089"
+                    stroke="#2E2C49"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
+        content: "Tariff plans on an ongoing basis",
+    },
+    {
+        id: 4,
+        icon: (
+            <svg
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M1.1821 11.5405L11.0816 1.641M11.0816 1.641V8.00496M11.0816 1.641L4.71751 1.64089"
+                    stroke="#2E2C49"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
+        content: "Offers for special clients",
+    },
+];

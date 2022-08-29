@@ -13,8 +13,8 @@ const OrderStyles = styled.div`
 const Order = () => {
     return (
         <OrderStyles>
-            <Title>How To Order?</Title>
-            <SubTitle>Follow the Steps</SubTitle>
+            <Title center="center">How To Order?</Title>
+            <SubTitle center="center">Follow the Steps</SubTitle>
         </OrderStyles>
     );
 };
