@@ -1,4 +1,5 @@
 import About from "./layout/About";
+import Blog from "./layout/Blog";
 import CTA from "./layout/CTA";
 import FoodType from "./layout/FoodType";
 import Header from "./layout/Header";
@@ -18,6 +19,7 @@ function App() {
             <About></About>
             <CTA></CTA>
             <Testimonials></Testimonials>
+            <Blog></Blog>
         </div>
     );
 }

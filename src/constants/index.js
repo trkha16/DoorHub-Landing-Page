@@ -12,6 +12,10 @@ import popular04 from "../assets/popular04.png";
 import popular05 from "../assets/popular05.png";
 import popular06 from "../assets/popular06.png";
 
+import blog01 from "../assets/blog01.png";
+import blog02 from "../assets/blog02.png";
+import blog03 from "../assets/blog03.png";
+
 export const cardItems = [
     {
         id: 1,
@@ -166,5 +170,71 @@ export const aboutItems = [
             </svg>
         ),
         content: "Offers for special clients",
+    },
+];
+
+export const blogItems = [
+    {
+        id: 1,
+        url: blog01,
+        title: "New seafood recipe perfect for losing weight",
+        desc: "Mass communication has led to modern marketing strategies to continue focusing on brand awareness.",
+        icon: (
+            <svg
+                width="16"
+                height="11"
+                viewBox="0 0 16 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M0 5.77702H14M14 5.77702L9.5 10.277M14 5.77702L9.5 1.27686"
+                    stroke="#393E61"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
+    },
+    {
+        id: 2,
+        url: blog02,
+        title: "Balance of proteins, fats and carbo. How do I get it?",
+        desc: "Mass communication has led to modern marketing strategies to continue focusing on brand awareness.",
+        icon: (
+            <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M1.05026 10.727L10.9498 0.827523M10.9498 0.827523V7.19149M10.9498 0.827523L4.58568 0.827409"
+                    stroke="#393E61"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
+    },
+    {
+        id: 3,
+        url: blog03,
+        title: "The importance of proper and healthy eating.",
+        desc: "Large distributions and heavy promotions. The fast-paced environment of digital payment service.",
+        icon: (
+            <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M1.05026 10.727L10.9498 0.827523M10.9498 0.827523V7.19149M10.9498 0.827523L4.58568 0.827409"
+                    stroke="#393E61"
+                    stroke-width="1.5"
+                />
+            </svg>
+        ),
     },
 ];
