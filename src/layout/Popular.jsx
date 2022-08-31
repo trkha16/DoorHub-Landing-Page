@@ -8,7 +8,6 @@ import { popularItems } from "../constants";
 
 const PopularStyles = styled.div`
     display: flex;
-    padding: 64px 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -24,7 +23,7 @@ const PopularStyles = styled.div`
 
 const Popular = () => {
     return (
-        <PopularStyles>
+        <PopularStyles className="container">
             <Title center="center">Popular dishes with delivery</Title>
             <SubTitle center="center">
                 The most delicious and healthy dishes from our chefs. You can

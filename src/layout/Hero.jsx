@@ -5,7 +5,6 @@ import ButtonLoadMore from "../components/button/ButtonLoadMore";
 
 const HeroStyles = styled.div`
     display: flex;
-    padding: 64px 0;
 
     .content {
         display: flex;
@@ -65,7 +64,7 @@ const HeroStyles = styled.div`
 
 const Hero = () => {
     return (
-        <HeroStyles>
+        <HeroStyles className="container">
             <div className="content">
                 <h1>
                     We Provide Delivery Within <br />

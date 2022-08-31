@@ -6,12 +6,16 @@ const TitleStyles = styled.h2`
     font-weight: 600;
     font-size: 46px;
     line-height: 58px;
-    color: #2e2c49;
+    color: ${(props) => props.color};
     text-align: ${(props) => props.center}; ;
 `;
 
-const Title = ({ children, ...props }) => {
-    return <TitleStyles {...props}>{children}</TitleStyles>;
+const Title = ({ children, color = "#2e2c49", ...props }) => {
+    return (
+        <TitleStyles color={color} {...props}>
+            {children}
+        </TitleStyles>
+    );
 };
 
 export default Title;

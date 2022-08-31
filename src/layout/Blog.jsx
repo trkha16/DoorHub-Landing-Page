@@ -8,10 +8,10 @@ import { blogItems } from "../constants";
 
 const BlogStyles = styled.div`
     display: flex;
-    padding: 64px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 90px;
     .blog {
         display: flex;
         justify-content: space-between;
@@ -23,7 +23,7 @@ const BlogStyles = styled.div`
 
 const Blog = () => {
     return (
-        <BlogStyles>
+        <BlogStyles className="container">
             <Title center="center">Articles and useful tips</Title>
             <SubTitle center="center">
                 Read on for useful information about tasty and healthy food.

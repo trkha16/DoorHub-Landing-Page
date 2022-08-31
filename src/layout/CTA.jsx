@@ -9,7 +9,6 @@ import AppStore from "../assets/AppStore.png";
 
 const CTAStyles = styled.div`
     display: flex;
-    padding: 64px 0;
     justify-content: center;
     align-items: center;
     .content {
@@ -55,7 +54,7 @@ const CTAStyles = styled.div`
 
 const CTA = () => {
     return (
-        <CTAStyles>
+        <CTAStyles className="container">
             <div className="content">
                 <Title>Make The Delicious Food and Order Our App</Title>
                 <SubTitle>

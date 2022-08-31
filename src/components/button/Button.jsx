@@ -8,9 +8,10 @@ const ButtonStyles = styled.div`
     box-sizing: border-box;
     background: linear-gradient(153.09deg, #5390ff 10.28%, #1660e6 102.17%);
     box-shadow: 0px 16px 40px rgba(56, 126, 250, 0.28);
-    border: 1px solid transparent;
+    border: 1px solid #5390ff;
     padding: 0 34px;
     border-radius: 27px;
+    cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
     height: 54px;
@@ -18,7 +19,6 @@ const ButtonStyles = styled.div`
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    cursor: pointer;
     &:hover {
         background: #fff;
         border: 1px solid #5390ff;
@@ -38,7 +38,7 @@ const ButtonStyles = styled.div`
 
 const Button = ({ children, ...props }) => {
     return (
-        <ButtonStyles>
+        <ButtonStyles {...props}>
             <span>{children}</span>
         </ButtonStyles>
     );

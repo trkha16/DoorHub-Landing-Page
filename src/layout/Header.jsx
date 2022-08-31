@@ -6,7 +6,7 @@ const HeaderStyles = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 24px 8%;
     ul {
         display: flex;
         justify-content: center;

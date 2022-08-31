@@ -8,7 +8,6 @@ import { aboutItems } from "../constants";
 
 const AboutStyles = styled.div`
     display: flex;
-    padding: 64px 0;
     justify-content: center;
     align-items: center;
     .image {
@@ -48,7 +47,7 @@ const AboutStyles = styled.div`
 
 const About = () => {
     return (
-        <AboutStyles>
+        <AboutStyles className="container">
             <div className="image">
                 <img src={aboutImage} alt="chef" />
             </div>

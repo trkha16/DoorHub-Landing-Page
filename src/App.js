@@ -6,6 +6,7 @@ import Header from "./layout/Header";
 import Hero from "./layout/Hero";
 import Order from "./layout/Order";
 import Popular from "./layout/Popular";
+import Subcribe from "./layout/Subcribe";
 import Testimonials from "./layout/Testimonials";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <CTA></CTA>
             <Testimonials></Testimonials>
             <Blog></Blog>
+            <Subcribe></Subcribe>
         </div>
     );
 }

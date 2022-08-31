@@ -8,7 +8,6 @@ import { cardItems } from "../constants";
 
 const FoodTypeStyles = styled.div`
     display: flex;
-    padding: 64px 0;
     justify-content: center;
     flex-direction: column;
     .food-card {
@@ -19,7 +18,7 @@ const FoodTypeStyles = styled.div`
 
 const FoodType = () => {
     return (
-        <FoodTypeStyles>
+        <FoodTypeStyles className="container">
             <Title center="center">
                 More Than 20,000 Dishes <br /> To Order!
             </Title>

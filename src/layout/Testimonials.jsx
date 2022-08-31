@@ -11,7 +11,6 @@ import avatar from "../assets/avatar.png";
 
 const TestimonialsStyles = styled.div`
     display: flex;
-    padding: 64px 0;
     justify-content: center;
     align-items: center;
 
@@ -79,7 +78,7 @@ const TestimonialsStyles = styled.div`
 
 const Testimonials = () => {
     return (
-        <TestimonialsStyles>
+        <TestimonialsStyles className="container">
             <div className="image">
                 <img src={TestimonialsBanner} alt="banner" />
             </div>
