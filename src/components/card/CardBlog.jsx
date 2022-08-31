@@ -30,6 +30,9 @@ const CardBlogStyles = styled.div`
         letter-spacing: 0.005em;
         color: #4d4c66;
     }
+    @media screen and (max-width: 620px) {
+        width: 100%;
+    }
 `;
 
 const CardBlog = ({ item }) => {

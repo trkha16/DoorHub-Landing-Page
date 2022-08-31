@@ -53,6 +53,17 @@ const FooterStyles = styled.div`
             text-align: center;
         }
     }
+    @media screen and (max-width: 1060px) {
+        padding-top: 50px;
+        .main {
+            flex-direction: column;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 24px;
+        }
+    }
 `;
 
 const Footer = () => {

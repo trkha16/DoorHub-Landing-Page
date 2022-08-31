@@ -19,6 +19,20 @@ const BlogStyles = styled.div`
         margin-top: 40px;
         margin-bottom: 60px;
     }
+
+    @media screen and (max-width: 620px) {
+        padding: 32px 10px;
+    }
+    @media screen and (max-width: 1060px) {
+        margin-bottom: 0;
+
+        .blog {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+        }
+    }
 `;
 
 const Blog = () => {

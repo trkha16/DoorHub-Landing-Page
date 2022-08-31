@@ -8,8 +8,6 @@ import Title from "../components/title/Title";
 const SubcribeStyles = styled.div`
     background: #6b95d8;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     position: relative;
     .subcribe-container {
@@ -18,7 +16,15 @@ const SubcribeStyles = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 125px 0;
+        padding: 125px 15px;
+        border-right: 2px dashed #99bcf4;
+        .subcribe {
+            .ready {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
     }
     .ready-container {
         flex: 1;
@@ -58,10 +64,26 @@ const SubcribeStyles = styled.div`
         }
     }
 
-    .line {
-        height: inherit;
-        border: 2px dashed #99bcf4;
-        position: absolute;
+    @media screen and (max-width: 620px) {
+        flex-direction: column;
+        .ready-container {
+            padding-bottom: 50px;
+            width: 100%;
+            .ready {
+                width: 100%;
+                padding: 0 10px;
+            }
+            .ready-btn {
+                width: 200px;
+            }
+        }
+        .subcribe-container {
+            padding: 50px 10px;
+            border: none;
+            .subcribe {
+                width: 100%;
+            }
+        }
     }
 `;
 
@@ -92,11 +114,9 @@ const Subcribe = () => {
                     <Title color="white">
                         Ready to <br /> order?
                     </Title>
-                    <Button styles={{ border: "none" }}>Order Now</Button>
+                    <Button className="ready-btn">Order Now</Button>
                 </div>
             </div>
-
-            <div className="line"></div>
         </SubcribeStyles>
     );
 };

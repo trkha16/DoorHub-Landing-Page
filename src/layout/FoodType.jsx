@@ -13,6 +13,7 @@ const FoodTypeStyles = styled.div`
     .food-card {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 `;
 
