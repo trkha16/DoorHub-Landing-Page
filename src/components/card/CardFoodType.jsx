@@ -4,6 +4,8 @@ import styled from "styled-components";
 const CardFoodTypeStyles = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(
         180deg,
         #eaf0ff 0%,
@@ -39,6 +41,10 @@ const CardFoodTypeStyles = styled.div`
         text-align: center;
         color: #4d4c66;
         text-transform: uppercase;
+    }
+    @media screen and (max-width: 620px) {
+        width: 200px;
+        margin: 0 auto;
     }
 `;
 

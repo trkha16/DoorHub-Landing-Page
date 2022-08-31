@@ -25,7 +25,9 @@ const BlogStyles = styled.div`
     }
     @media screen and (max-width: 1060px) {
         margin-bottom: 0;
-
+        br {
+            display: none;
+        }
         .blog {
             flex-direction: column;
             justify-content: center;

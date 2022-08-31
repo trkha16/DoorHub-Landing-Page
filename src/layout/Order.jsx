@@ -13,10 +13,26 @@ const OrderStyles = styled.div`
     justify-content: center;
     flex-direction: column;
     .steps {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 24px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 80px 60px;
+        .step-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 1060px) {
+        .steps {
+            grid-template-columns: auto auto;
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .steps {
+            grid-template-columns: auto;
+            gap: 50px 0;
+        }
     }
 `;
 
@@ -27,7 +43,7 @@ const Order = () => {
             <SubTitle center="center">Follow the Steps</SubTitle>
             <div className="steps">
                 {orderItems.map((item) => (
-                    <div>
+                    <div className="step-items">
                         <img src={item.url} alt={item.url} />
                     </div>
                 ))}

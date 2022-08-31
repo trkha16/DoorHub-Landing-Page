@@ -43,6 +43,36 @@ const AboutStyles = styled.div`
             color: #4d4c66;
         }
     }
+
+    @media screen and (max-width: 1060px) {
+        flex-direction: column;
+        gap: 32px;
+        br {
+            display: none;
+        }
+        .content-container {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .content {
+                display: inline-block;
+            }
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .image {
+            display: none;
+        }
+        .content {
+            width: 100%;
+        }
+        .desc-container {
+            display: grid;
+            grid-template-columns: auto;
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
 `;
 
 const About = () => {

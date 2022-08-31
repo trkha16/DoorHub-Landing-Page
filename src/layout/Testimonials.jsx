@@ -11,10 +11,7 @@ import avatar from "../assets/avatar.png";
 
 const TestimonialsStyles = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .content {
+    .content-container {
         flex: 1;
     }
     .image {
@@ -74,6 +71,37 @@ const TestimonialsStyles = styled.div`
             margin: auto 0;
         }
     }
+    @media screen and (max-width: 1060px) {
+        flex-direction: column;
+        br {
+            display: none;
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .content {
+                display: inline-block;
+            }
+        }
+        .clients {
+            flex-direction: column;
+            width: 100%;
+            .switch-btn {
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .image {
+            display: none;
+        }
+        .content {
+            width: 100%;
+        }
+    }
 `;
 
 const Testimonials = () => {
@@ -83,30 +111,32 @@ const Testimonials = () => {
                 <img src={TestimonialsBanner} alt="banner" />
             </div>
 
-            <div className="content">
-                <Title>
-                    What Our clients say <br /> about us
-                </Title>
-                <SubTitle>
-                    I am grateful to the company for the timely and
-                    exceptionally <br /> accurate delivery of food. Everything
-                    is very tasty and high <br /> quality. And it follows that
-                    the weight loss plan I have chosen <br /> really works! I
-                    was surprised
-                </SubTitle>
-                <div className="clients">
-                    <div className="info">
-                        <div className="avatar">
-                            <img src={avatar} alt="Client avatar" />
-                        </div>
+            <div className="content-container">
+                <div className="content">
+                    <Title>
+                        What Our clients say <br /> about us
+                    </Title>
+                    <SubTitle>
+                        I am grateful to the company for the timely and
+                        exceptionally <br /> accurate delivery of food.
+                        Everything is very tasty and high <br /> quality. And it
+                        follows that the weight loss plan I have chosen <br />{" "}
+                        really works! I was surprised
+                    </SubTitle>
+                    <div className="clients">
+                        <div className="info">
+                            <div className="avatar">
+                                <img src={avatar} alt="Client avatar" />
+                            </div>
 
-                        <div className="details">
-                            <h5>Seona Palmsmith, </h5>
-                            <p>Dixon Corp</p>
-                            <img src={rating} alt="rating" />
+                            <div className="details">
+                                <h5>Seona Palmsmith, </h5>
+                                <p>Dixon Corp</p>
+                                <img src={rating} alt="rating" />
+                            </div>
                         </div>
+                        <ButtonSwitch className="switch-btn"></ButtonSwitch>
                     </div>
-                    <ButtonSwitch className="switch-btn"></ButtonSwitch>
                 </div>
             </div>
         </TestimonialsStyles>

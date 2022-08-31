@@ -60,6 +60,24 @@ const HeroStyles = styled.div`
         justify-content: end;
         align-items: center;
     }
+    @media screen and (max-width: 1060px) {
+        flex-direction: column;
+        gap: 44px;
+        br {
+            display: none;
+        }
+        .image {
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .image {
+            display: none;
+        }
+        .content {
+            width: 100%;
+        }
+    }
 `;
 
 const Hero = () => {
@@ -81,6 +99,7 @@ const Hero = () => {
                     <ButtonLoadMore width="160px">Discover</ButtonLoadMore>
                 </div>
             </div>
+
             <div className="image">
                 <img src={bannerImage} alt="banner" />
             </div>

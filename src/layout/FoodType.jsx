@@ -11,9 +11,21 @@ const FoodTypeStyles = styled.div`
     justify-content: center;
     flex-direction: column;
     .food-card {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 80px 24px;
+    }
+
+    @media screen and (max-width: 1060px) {
+        .food-card {
+            grid-template-columns: auto auto auto;
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .food-card {
+            grid-template-columns: auto;
+            gap: 50px 0;
+        }
     }
 `;
 

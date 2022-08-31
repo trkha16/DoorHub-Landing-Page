@@ -19,6 +19,21 @@ const PopularStyles = styled.div`
         gap: 80px 60px;
         margin-bottom: 60px;
     }
+
+    @media screen and (max-width: 1060px) {
+        br {
+            display: none;
+        }
+        .card-container {
+            grid-template-columns: auto auto;
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .card-container {
+            grid-template-columns: auto;
+            gap: 50px 0;
+        }
+    }
 `;
 
 const Popular = () => {

@@ -50,6 +50,39 @@ const CTAStyles = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 1060px) {
+        flex-direction: column-reverse;
+        gap: 32px;
+        br {
+            display: none;
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .content {
+                display: inline-block;
+            }
+        }
+        .clients {
+            flex-direction: column;
+            width: 100%;
+            .switch-btn {
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .image {
+            display: none;
+        }
+        .content {
+            width: 100%;
+        }
+    }
 `;
 
 const CTA = () => {
