@@ -238,3 +238,81 @@ export const blogItems = [
         ),
     },
 ];
+
+export const footerItems = [
+    {
+        id: 1,
+        title: "Quick Link",
+        links: [
+            {
+                name: "About Us",
+            },
+            {
+                name: "Become A Partner",
+            },
+            {
+                name: "Our Team",
+            },
+            {
+                name: "Blog",
+            },
+            {
+                name: "Contact",
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: "Useful Link",
+        links: [
+            {
+                name: "Privacy Policy",
+            },
+            {
+                name: "Terms and Conditions",
+            },
+            {
+                name: "Disclaimer",
+            },
+            {
+                name: "Support",
+            },
+            {
+                name: "FAQ",
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: "Get to Know Us",
+        links: [
+            {
+                name: "Gift Cards",
+            },
+            {
+                name: "DoorDash Stories",
+            },
+            {
+                name: "LinkedIn",
+            },
+            {
+                name: "Glassdoor",
+            },
+            {
+                name: "Accessibility",
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: "Contact",
+        links: [
+            {
+                name: "WhatsApp",
+            },
+            {
+                name: "Support 24",
+            },
+        ],
+    },
+];

@@ -2,6 +2,7 @@ import About from "./layout/About";
 import Blog from "./layout/Blog";
 import CTA from "./layout/CTA";
 import FoodType from "./layout/FoodType";
+import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Hero from "./layout/Hero";
 import Order from "./layout/Order";
@@ -22,6 +23,7 @@ function App() {
             <Testimonials></Testimonials>
             <Blog></Blog>
             <Subcribe></Subcribe>
+            <Footer></Footer>
         </div>
     );
 }
